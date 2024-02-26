@@ -1,6 +1,8 @@
-package homework;
+package homework.util.user;
 
-public class User{
+import homework.util.Reportable;
+
+public class User implements Reportable {
     private final String name;
 
     public User(String name){
@@ -9,11 +11,6 @@ public class User{
 
     public String getName(){
         return name;
-    }
-
-    public void save(){
-        Persister persister = new Persister(this);
-        persister.save();
     }
 
     public void report(){

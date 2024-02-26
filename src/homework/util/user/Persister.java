@@ -1,6 +1,8 @@
-package homework;
+package homework.util.user;
 
-public class Persister{
+import homework.util.Saveable;
+
+public class Persister implements Saveable {
     private final User user;
 
     public Persister(User user){
